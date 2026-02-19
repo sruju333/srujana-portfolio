@@ -27,6 +27,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  font-size: 1.05rem; /* slightly bigger text for readability */
 }
 
 /* Buttons and links outside navbar */
@@ -34,6 +35,9 @@ a {
   color: var(--accent-mint);
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
+  border: 2px solid black; /* black outline for all links/buttons */
+  border-radius: 0.75rem;  /* slightly rounded */
+  padding: 0.5rem 1rem;
 }
 
 a:hover {
@@ -49,11 +53,13 @@ a:hover {
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 2px solid black; /* black outline for cards */
 }
 
 /* Headings */
 h1, h2, h3 {
   color: var(--accent-teal);
+  font-size: 1.5rem; /* slightly bigger headings */
 }
 
 /* Navbar styles — leave unchanged */
@@ -66,7 +72,7 @@ nav {
   gap: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border-radius: 0.75rem;
-  font-size: 1.1rem; /* make navbar text slightly bigger */
+  font-size: 1.2rem; /* navbar text slightly bigger */
 }
 
 nav a {

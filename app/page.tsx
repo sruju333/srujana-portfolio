@@ -10,6 +10,8 @@ export default function Home() {
 
           <p className="mt-6 max-w-2xl text-lg">
             Software Engineer • Backend & AI • MSCS @ Boston University
+          </p>
+          <p className="mt-2 max-w-2xl text-lg">
             This is my tech blog, portfolio, and personal corner of the internet.
           </p>
 
