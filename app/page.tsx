@@ -6,7 +6,7 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center py-28 text-center">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-7xl font-bold">
             Hi, I’m Srujana ! 🌿
           </h1>
 
