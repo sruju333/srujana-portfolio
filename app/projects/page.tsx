@@ -1,10 +1,8 @@
 export default function Projects(){
     return (
-        <main className="main">
-            <h1 className="title">Projects</h1>
-            <p className="description">
-                My engineering and research projects.
-            </p>
+        <main className="p-12">
+            <h1 className="text-3xl font-bold">Projects</h1>
+            <p className="mt-4 text-lg">My engineering and research projects.</p>
         </main>
     );
 }

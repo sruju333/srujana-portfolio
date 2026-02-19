@@ -1,10 +1,8 @@
 export default function Blog(){
     return (
-        <main className="main">
-            <h1 className="title">Blog</h1>
-            <p className="description">
-                Tech blogs on AI & software engineering.
-            </p>
+        <main className="p-12">
+            <h1 className="text-3xl font-bold">Blog</h1>
+            <p className="mt-4 text-lg">Tech blogs on AI, security, and backend engineering.</p>
         </main>
     );
 }

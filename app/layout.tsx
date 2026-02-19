@@ -28,13 +28,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <nav className="flex gap-6 p-6 border-b">
-          <Link href="/" className="font-medium">Home</Link>
-          <a href="/about" className="font-medium">About</a>
-          <a href="/blog" className="font-medium">Blog</a>
-          <a href="/projects" className="font-medium">Projects</a>
+      <nav className="flex gap-6 p-4 bg-mint text-darktext font-medium shadow-md">
+          <Link href="/">Home</Link>
+          <a href="/blog">Blog</a>
+          <a href="/projects">Projects</a>
+          <a href="/fun">Fun</a>
       </nav>
-        {children}
+      {children}
       </body>
 
     </html>
