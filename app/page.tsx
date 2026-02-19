@@ -57,7 +57,7 @@ export default function Home() {
           {/* Image Column */}
           <div className="flex-1 flex justify-center md:justify-end">
             <Image
-                src="/public/profile.jpg"      // replace with your image path
+                src="/profile.jpg"      // replace with your image path
                 alt="Srujana Portrait"
                 width={300}
                 height={300}
