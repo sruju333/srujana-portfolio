@@ -28,11 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <nav className="flex gap-6 p-4 bg-mint text-darktext font-medium shadow-md">
-          <Link href="/">Home</Link>
-          <a href="/blog">Blog</a>
-          <a href="/projects">Projects</a>
-          <a href="/fun">Fun</a>
+      <nav className="flex gap-4 p-4 bg-mint text-darktext font-medium shadow-md">
+          <Link href="/" className="px-4 py-2 rounded-full border-2 border-black bg-white text-black font-semibold hover:bg-[#A3D2CA] hover:border-[#A3D2CA] hover:text-white transition-all duration-200">Home</Link>
+          <a href="/blog" className="px-4 py-2 rounded-full border-2 border-black bg-white text-black font-semibold hover:bg-[#A3D2CA] hover:border-[#A3D2CA] hover:text-white transition-all duration-200">Blog</a>
+          <a href="/projects" className="px-4 py-2 rounded-full border-2 border-black bg-white text-black font-semibold hover:bg-[#A3D2CA] hover:border-[#A3D2CA] hover:text-white transition-all duration-200">Projects</a>
+          <a href="/fun" className="px-4 py-2 rounded-full border-2 border-black bg-white text-black font-semibold hover:bg-[#A3D2CA] hover:border-[#A3D2CA] hover:text-white transition-all duration-200">Fun</a>
       </nav>
       {children}
       </body>

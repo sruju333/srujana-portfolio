@@ -5,9 +5,9 @@ export default function Home() {
       <main className="min-h-screen bg-white text-darktext px-6">
 
         {/* Hero Section */}
-        <section className="flex flex-col items-center justify-center py-28 text-center">
-          <h1 className="text-7xl font-bold">
-            Hi, I’m Srujana ! 🌿
+        <section className="flex flex-col items-center justify-center py-16 text-center">
+          <h1 className="text-6xl font-bold">
+            Hi, I’m Srujana ! 🌿🧸
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg">
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         {/* About Section with Image */}
-        <section className="mx-auto max-w-5xl bg-cream rounded-2xl p-8 shadow-lg mt-12 flex flex-col md:flex-row items-center md:items-start gap-8">
+        <section className="mx-auto max-w-5xl bg-cream rounded-2xl p-8 shadow-lg mt-4 flex flex-col md:flex-row items-center gap-8">
 
           {/* Text Column */}
           <div className="flex-1">
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           {/* Image Column */}
-          <div className="flex-1 flex justify-center md:justify-end">
+          <div className="flex-1 flex items-center justify-center">
             <Image
                 src="/profile.jpg"      // replace with your image path
                 alt="Srujana Portrait"

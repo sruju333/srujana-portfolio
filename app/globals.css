@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;     /* page background = white */
-  --foreground: #2F3E46;     /* main text color = soft dark */
-  --accent-mint: #A8E6CF;    /* mint-green accent */
-  --accent-blue: #A3D2CA;    /* pastel blue for highlights */
-  --accent-cream: #FFF7E6;   /* cream accent */
+  --background: #ffffff;
+  --foreground: #2F3E46;
+  --accent-mint: #A8E6CF;
+  --accent-blue: #A3D2CA;
+  --accent-cream: #FFF7E6;
 }
 
 @theme inline {
@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #A3D2CA;   /* pastel blue background in dark mode */
+    --background: #A3D2CA;
     --foreground: #FFF7E6;
   }
 }
@@ -28,21 +28,6 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   line-height: 1.6;
   font-size: 1.05rem;
-}
-
-/* Links and buttons outside navbar */
-a {
-  color: var(--accent-blue);
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.2s ease;
-  border: 1px solid black; /* black outline for all links/buttons */
-  border-radius: 0.75rem;  /* slightly rounded */
-  padding: 0.5rem 1rem;
-}
-
-a:hover {
-  color: var(--accent-mint);
-  transform: scale(1.02);
 }
 
 /* Section cards or fun blocks */
@@ -59,7 +44,6 @@ a:hover {
 /* Headings */
 h1, h2, h3 {
   color: var(--accent-blue);
-  font-size: 1.5rem; /* slightly bigger headings */
 }
 
 /* Navbar styles — leave unchanged */
@@ -75,15 +59,23 @@ nav {
   font-size: 1.2rem; /* navbar text slightly bigger */
 }
 
-nav a {
-  color: var(--foreground);
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.2s ease;
+nav a:hover {
+  color: white !important;
+  transform: scale(1.05);
 }
 
-nav a:hover {
+a {
   color: var(--accent-blue);
-  transform: scale(1.05);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+a:hover {
+  color: var(--accent-mint);
+  transform: scale(1.02);
 }
 
 nav a.active {
