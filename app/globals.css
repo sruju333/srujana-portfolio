@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #D0F0FD;
+  --foreground: #2F3E46;
+  --accent-mint: #A8E6CF;
+  --accent-teal: #5EC2B7;
 }
 
 @theme inline {
@@ -14,13 +16,45 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #5EC2B7;
+    --foreground: #FFF7E6;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Links and buttons using mint-green accents */
+/* Navbar colors and hover */
+nav {
+  background-color: var(--accent-mint); /* mint navbar background */
+  color: var(--foreground);             /* soft dark text */
+  padding: 1rem;
+  font-weight: 500;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 0.75rem; /* slightly rounded corners */
+}
+
+/* Ensure both <a> and <Link> look the same */
+nav a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: var(--accent-teal);
+  transform: scale(1.05); /* slight pop on hover */
+}
+
+/* Optional: active link highlight */
+nav a.active {
+  font-weight: 600;
+  text-decoration: underline;
 }
