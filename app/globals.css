@@ -27,21 +27,20 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  font-size: 1.05rem; /* slightly bigger text for readability */
+  font-size: 1.05rem;
 }
 
-/* Buttons and links outside navbar */
 a {
-  color: var(--accent-mint);
+  color: var(--accent-teal);
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
-  border: 2px solid black; /* black outline for all links/buttons */
+  border: 1px solid black; /* black outline for all links/buttons */
   border-radius: 0.75rem;  /* slightly rounded */
   padding: 0.5rem 1rem;
 }
 
 a:hover {
-  color: var(--accent-teal);
+  color: var(--accent-mint);
   transform: scale(1.02);
 }
 
@@ -53,7 +52,7 @@ a:hover {
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  border: 2px solid black; /* black outline for cards */
+  border: 1px solid black; /* black outline for cards */
 }
 
 /* Headings */
