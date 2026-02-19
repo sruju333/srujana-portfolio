@@ -9,7 +9,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg">
-            Software Engineer • Backend & AI • MSCS @ Boston University • B.E. (Hons) @ BITS Pilani
+            Software Engineer • Backend & AI • MSCS @ Boston University
             This is my tech blog, portfolio, and personal corner of the internet.
           </p>
 
@@ -23,7 +23,7 @@ export default function Home() {
 
             <a
                 href="/projects"
-                className="rounded-2xl bg-white px-6 py-3 font-medium shadow-md hover:bg-cream transition"
+                className="rounded-2xl bg-mint px-6 py-3 font-medium shadow-md hover:bg-teal transition"
             >
               Projects
             </a>

@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #D0F0FD;
-  --foreground: #2F3E46;
-  --accent-mint: #A8E6CF;
-  --accent-teal: #5EC2B7;
+  --background: #ffffff;     /* page background = white */
+  --foreground: #2F3E46;     /* main text color = soft dark */
+  --accent-mint: #A8E6CF;    /* mint-green accent */
+  --accent-teal: #5EC2B7;    /* teal accent for hover or highlights */
+  --accent-cream: #FFF7E6;   /* cream accent */
 }
 
 @theme inline {
@@ -25,35 +26,60 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
-/* Links and buttons using mint-green accents */
-/* Navbar colors and hover */
+/* Buttons and links outside navbar */
+a {
+  color: var(--accent-mint);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-teal);
+  transform: scale(1.02);
+}
+
+/* Section cards or fun blocks */
+.section-card {
+  background-color: var(--accent-cream);
+  color: var(--foreground);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--accent-teal);
+}
+
+/* Navbar styles — leave unchanged */
 nav {
-  background-color: var(--accent-mint); /* mint navbar background */
-  color: var(--foreground);             /* soft dark text */
+  background-color: var(--accent-mint);
+  color: var(--foreground);
   padding: 1rem;
   font-weight: 500;
   display: flex;
   gap: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 0.75rem; /* slightly rounded corners */
+  border-radius: 0.75rem;
+  font-size: 1.1rem; /* make navbar text slightly bigger */
 }
 
-/* Ensure both <a> and <Link> look the same */
 nav a {
   color: var(--foreground);
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effect */
 nav a:hover {
   color: var(--accent-teal);
-  transform: scale(1.05); /* slight pop on hover */
+  transform: scale(1.05);
 }
 
-/* Optional: active link highlight */
 nav a.active {
   font-weight: 600;
   text-decoration: underline;
