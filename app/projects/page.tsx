@@ -45,7 +45,7 @@ export default function Projects() {
                 />
                 <button
                     onClick={loadProjects}
-                    className="bg-mint px-4 py-2 rounded-lg border-2 border-black hover:bg-[#A3D2CA]"
+                    className="bg-mint px-4 py-2 rounded-lg border-2 border-black hover:bg-amber-50"
                 >
                     Load Projects
                 </button>
