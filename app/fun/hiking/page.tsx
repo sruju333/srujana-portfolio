@@ -34,12 +34,12 @@ export default function Hiking() {
             </div>
             <br/>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
-                <Image src="/IMG_8948.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
-                <Image src="/IMG_8730.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
-                <Image src="/IMG_8814.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
-                <Image src="/IMG_5778.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
-                <Image src="/IMG_6032.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
-                <Image src="/IMG_0452.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
+                <Image src="/hiking/IMG_8948.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
+                <Image src="/hiking/IMG_8730.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
+                <Image src="/hiking/IMG_8814.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
+                <Image src="/hiking/IMG_5778.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
+                <Image src="/hiking/IMG_6032.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
+                <Image src="/hiking/IMG_0452.jpeg" alt="Diana's Baths" width={300} height={300} className="rounded-xl shadow-lg object-cover" />
             </div>
         </main>
     );
