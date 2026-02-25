@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         {/* About Section with Image */}
-        <section className="mx-auto max-w-5xl bg-cream rounded-2xl p-8 shadow-lg mt-4 flex flex-col md:flex-row items-center gap-8">
+        <section className="mx-auto max-w-5xl bg-amber-50 rounded-2xl p-8 shadow-lg mt-4 flex flex-col md:flex-row items-center gap-8">
 
           {/* Text Column */}
           <div className="flex-1">
