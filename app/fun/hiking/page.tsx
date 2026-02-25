@@ -19,7 +19,7 @@ export default function Hiking() {
                 {/* Image Column */}
                 <div className="flex-1 flex items-center justify-center">
                     <Image
-                        src="/IMG_0460.jpeg"
+                        src="/hiking/IMG_0460.jpeg"
                         alt="Diana's Baths"
                         width={200}
                         height={200}
