@@ -8,13 +8,6 @@
   --accent-cream: #FFF7E6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #A3D2CA;
@@ -22,12 +15,19 @@
   }
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   line-height: 1.6;
   font-size: 1.05rem;
+  cursor: url('/lolly_cursor.png'), auto;
 }
 
 /* Section cards or fun blocks */
@@ -76,6 +76,7 @@ a {
 a:hover {
   color: var(--accent-mint);
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 nav a.active {
