@@ -71,9 +71,9 @@ const techStack: StackCategory[] = [
 
 export default function TechStack() {
     return (
-        <section className="py-24 relative">
+        <section className="py-14 relative">
             <h2 className="text-4xl font-bold text-center mb-16">
-                Tech Stack
+                ⬇️ Tech Stack ⬇️
             </h2>
 
             <div className="max-w-6xl mx-auto space-y-16">

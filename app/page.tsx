@@ -9,8 +9,8 @@ export default function Home() {
         <AnimatedBackground />
 
         {/* Hero Section */}
-        <section className="flex flex-col items-center justify-center py-16 text-center">
-          <h1 className="text-6xl font-bold">
+        <section className="flex flex-col items-center justify-center py-14 text-center">
+          <h1 className="text-5xl font-bold">
             Hi, I’m Srujana ! 🌿🧸
           </h1>
 
