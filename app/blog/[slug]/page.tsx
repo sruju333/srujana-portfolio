@@ -6,8 +6,8 @@ import html from "remark-html";
 import { notFound } from "next/navigation";
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
-    // Hide blog in production unless explicitly enabled
-    if (process.env.NEXT_PUBLIC_SHOW_BLOG !== "true") {
+    // Hide blog only if explicitly disabled
+    if (process.env.NEXT_PUBLIC_SHOW_BLOG === "false") {
         notFound();
     }
 

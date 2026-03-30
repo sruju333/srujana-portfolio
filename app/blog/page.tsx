@@ -5,8 +5,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default function Blog() {
-    // Hide blog in production unless explicitly enabled
-    if (process.env.NEXT_PUBLIC_SHOW_BLOG !== "true") {
+    // Hide blog only if explicitly disabled
+    if (process.env.NEXT_PUBLIC_SHOW_BLOG === "false") {
         notFound();
     }
 
