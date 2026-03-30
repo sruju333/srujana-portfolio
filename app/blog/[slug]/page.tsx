@@ -3,8 +3,14 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { notFound } from "next/navigation";
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+    // Hide blog in production unless explicitly enabled
+    if (process.env.NEXT_PUBLIC_SHOW_BLOG !== "true") {
+        notFound();
+    }
+
     const { slug } = await params; // ✅ THIS LINE FIXES YOUR ERROR
 
     const filePath = path.join(

@@ -2,8 +2,14 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function Blog() {
+    // Hide blog in production unless explicitly enabled
+    if (process.env.NEXT_PUBLIC_SHOW_BLOG !== "true") {
+        notFound();
+    }
+
     const postsDir = path.join(process.cwd(), "app/blog/posts");
     const files = fs.readdirSync(postsDir);
 
